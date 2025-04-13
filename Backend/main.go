@@ -24,6 +24,6 @@ func main() {
     fmt.Println("Connect to Supabase Success")
 
     app := fiber.New()
-    routes.SetupRoutes(app)
+    routes.SetupRoutes(app, DB)
     app.Listen(":3000")
 }
